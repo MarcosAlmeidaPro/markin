@@ -192,8 +192,10 @@ header {
 
 .headline {
     margin-top: 15%;
+    margin-left: 30%;
     width: 70%;
     height: 500px;
+    position: absolute;
 }
 
 .titulo-principal,
