@@ -1,0 +1,506 @@
+/*** HEAD ***/
+html,
+body {
+    background: white;
+    font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+    color: rgb(86, 87, 88);
+    font-size: 18px;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 110px 0;
+}
+
+/*** REUTILIZÁVEIS ***/
+
+h1 {
+    text-transform: uppercase;
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+
+h1 small { 
+    font-size: 60%;
+    font-weight: 200;
+}
+
+h4 {
+    font-size: 120%;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.centro {
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.texto-curto {
+    margin-bottom: 80px;
+    font-size: 90%;
+    font-weight: 500;
+    width: 85%;
+}
+
+.texto-longo {
+    font-size: 90%;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.texto-longo br{
+    line-height: 50px;
+}
+
+.btn-enviar {
+    margin: 20px auto;
+    border: 0;
+}
+
+.centralizar-btn {text-align: center;}
+
+.btn-cta:link,
+.btn-cta:visited,
+.btn-enviar  {
+    padding: 18px 30px;
+    background-color: rgb(28, 134, 40);
+    border-radius: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 80%;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    transition: background-color, 0.3s;
+}
+
+.btn-secundario:link,
+.btn-secundario:visited {
+    padding: 15px 20px;
+    background-color: rgb(219, 219, 219);
+    border-radius: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 80%;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color, 0.3s;
+}
+
+
+.btn-cta:hover,
+.btn-cta:active,
+.btn-secundario:hover,
+.btn-secundario:active,
+.btn-enviar:hover {
+    background-color: rgb(42, 168, 57);
+    transition: background-color, 0.3s;
+}
+
+/*** HEAD ***/
+
+header {
+    background-image: none;
+    height: 30vh;
+    margin-bottom: 5%;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-top: 15px;
+}
+
+.menu-fixo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(48, 48, 48, 0.95);
+    z-index: 9999;
+    margin-bottom: 0;
+}
+
+.menu {
+    list-style: none;
+    float: right;
+    margin-bottom: 0;
+    padding: 15px 0; 
+}
+
+.menu li {
+    float: left;
+    margin-left: 50px;
+}
+
+.menu a:link,
+.menu a:visited {
+    color: #fff;
+    font-size: 75%;
+    text-decoration: none;
+    transition: color, 0.3s;
+}
+
+.menu li:last-child a:link,
+.menu li:last-child a:visited {
+    background-color: rgb(28, 134, 40);
+    padding: 10px;
+    border-radius: 3px;
+    transition: background-color, 0.3s;    
+}
+
+.menu a::before {
+    content: "/";
+    color:rgb(28, 134, 40);
+    margin-right: 8px;
+    font-weight: 700;
+}
+
+.menu li:last-child a::before { content: none;}
+
+.menu a:hover,
+.menu a:active {  
+    color: rgb(28, 134, 40);
+    transition: color, 0.3s;
+}
+
+.menu li:last-child a:hover,
+.menu li:last-child a:active {  
+    color: #fff;
+    background-color: rgb(42, 168, 57);
+    transition: background-color, 0.3s;
+}
+
+.icone-menu-mobile {
+    color: #fff;
+    font-size: 180%;
+    position: absolute;
+    right: 30px;
+    top: 2px;
+    display: none;
+}
+
+
+.headline {
+    margin-top: 15%;
+    margin-left: 15%;
+    width: 70%;
+    height: 500px;
+    position: absolute;
+}
+
+.titulo-principal,
+h3 {
+    color: #fff;
+    text-align: center;
+}
+
+.titulo-principal {
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 52px;
+    font-size: 300%;
+    text-transform: none;
+}
+
+h3 {
+    font-size: 90%;
+    font-weight: 300;
+    margin-bottom: 60px;
+}
+
+/*** INTRO ***/
+
+#intro {padding-bottom: 0;}
+
+.vantagens {
+    list-style: none;
+}
+
+.vantagens li {
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.marcador {
+    color: rgb(42, 168, 57);
+    font-size: 250%;
+    font-weight: 600;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid  rgb(42, 168, 57);
+    text-align: center;
+}
+
+.marcador p {
+    margin-top: -5px;
+}
+
+#intro i {
+    font-size: 300%;
+    color: rgb(42, 168, 57)
+}
+
+.box-vantagens {
+    text-align: center;
+    width: 85%;
+    margin-left: 7.5%;
+    margin-right: 0;
+    padding: 0;
+    margin-top: 60px;
+}
+
+.box-vantagens p {font-size: 80%;}
+
+/*** SERVIÇOS ***/
+
+#servicos {padding-top: 50px;}
+
+.box {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 60px;
+    width: 90%;
+}
+
+.box .texto-longo {text-align: center;}
+
+.icone {
+    height: 120px;
+    width: auto;
+    margin-bottom: 30px;
+    vertical-align: bottom;
+}
+
+.p-servicos {
+    font-size: 90%;
+}
+
+.btn-link:link,
+.btn-link:visited {
+    text-transform: uppercase;
+    color: rgb(28, 134, 40);
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 90%;
+}
+
+.btn-link:hover,
+.btn-link:active {
+    color: rgb(42, 168, 57);
+}
+
+/*** PORTIFOLIO ***/
+
+#portfolio {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.8)), url("../css/img/bg-rascunhos-min.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    padding: 60px 0;
+    color: #fff;
+}
+
+/*** PERFIL ***/
+
+.hamburguer {
+    width: 140px;
+    height: auto;
+    float: right;
+    margin-bottom: 40px;
+}
+
+/*** GARANTIA ***/
+
+#garantia {
+    background-color: #E8E8E8;
+    padding: 40px 0;
+}
+
+.selo {
+    width: 200px;
+    height: auto;
+}
+
+#garantia h1 {
+    margin-top: 10px;
+    font-size: 150%;
+    margin-bottom: 0;
+}
+
+#garantia .texto-longo {font-size: 85%;}
+
+/*** DEPOIMENTOS ***/
+
+#depoimentos ul {
+    list-style: none;
+    display: inline-block;
+}
+
+
+.foto-perfil {
+    width: 130px;
+    height: auto;
+    border-radius: 50%;
+    float: left;
+    margin-right: 30px;
+}
+
+.nome-perfil {
+    margin-bottom: 80px;
+    font-size: 90%;
+    font-weight: 500;
+    width: 100%;
+    float: right;
+    text-align: right;
+}
+
+.nome-perfil::after {
+    content: "__________";
+    color: rgb(28, 134, 40);
+    font-weight: 900;
+}
+
+
+/*** FOOTER ***/
+
+footer {
+    text-align: center;
+    padding: 60px;
+    background-color: rgb(28, 134, 40);
+    color: #fff;
+}
+
+footer i {
+    font-size: 200%;
+    color: #fff;
+    margin-right: 30px;
+}
+
+.ion-social-facebook:hover,
+.ion-social-facebook:active {color: rgb(132, 186, 248);}
+
+.ion-social-instagram:hover,
+.ion-social-instagram:active {color: rgb(245, 168, 253);}
+
+.ion-social-linkedin:hover,
+.ion-social-linkedin:active {color: rgb(231, 247, 144);}
+
+/*** ANIMAÇÃO ***/
+
+.js--intro-1,
+.js--intro-2,
+.js--intro-3,
+.js--intro-4,
+.js--intro-5,
+.js--perfil-1,
+.js--perfil-2,
+.js--perfil-3,
+.js--box-1 {
+    visibility: hidden;
+}
+
+/*** PORTFOLIO ***/
+
+.headline {
+    margin-top: 5%;
+    margin-left: 15%;
+    width: 70%;
+    position: absolute;
+}
+
+.headline h3 {
+    line-height: 40px; 
+    width: 80%;
+}
+
+.btn-cta {visibility: hidden;}
+
+.menu-fixo {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 1px 5px #888888;
+}
+
+.menu a:link,
+.menu a:visited {color: rgb(86, 87, 88);}
+
+.menu li:last-child a:link,
+.menu li:last-child a:visited {color: #fff;}
+
+.menu a::before {
+    color:rgb(42, 168, 57);
+}
+
+.menu a:hover,
+.menu a:active {  
+    color: rgb(42, 168, 57);
+}
+
+.menu li:last-child a:hover,
+.menu li:last-child a:active {color: #fff;}
+
+.icone-menu-mobile {color: rgb(86, 87, 88);}
+
+.titulo-principal,
+h3 {color: rgb(86, 87, 88);}
+
+/*** MINIATURAS ***/
+
+#miniaturas {padding-bottom: 0;}
+
+.miniaturas {padding: 0;}
+
+.mini-img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.legenda {
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding: 5% 5% 0 0;
+    transition: opacity, 0.3s, background-color, 0.3s;
+}
+
+.legenda h2,
+.legenda h3 {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+.legenda:hover {
+    opacity: 0;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: opacity, 0.3s, background-color, 0.3s;
+    cursor: default;
+}
+
+.miniaturas h2 {
+    font-weight: 400;
+    font-size: 170%;
+}
+
+.miniaturas h2,
+.miniaturas h3 {
+    color: #fff;
+    text-align: right;
+}
+

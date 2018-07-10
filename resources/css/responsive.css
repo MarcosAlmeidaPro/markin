@@ -1,0 +1,155 @@
+@media only screen and (max-width: 1200px) {
+    .headline {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    html,
+    body {font-size: 18px;}
+    .headline {width: 80%;}
+    .hamburguer {width: 100px;}  
+    .icone {height: 80px;}
+    #garantia {padding: 20px 0;}
+    .texto-curto {margin-bottom: 40px;}
+    .centro {
+        width: 100%;
+        margin: auto 0;
+    }
+    .selo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }    
+}
+
+@media only screen and (max-width: 768px) {
+    html,
+    body {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    section {padding: 50px 0;}
+
+    h1 {line-height: 35px;}
+
+    h1 small {
+        font-size: 80%;
+    }
+
+    nav {
+        padding: 10px 0;
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+
+    .icone-menu-mobile {display: inline-block;}
+    
+    .menu {display: none;}
+
+    .menu {
+        list-style: none;
+        float: none;
+        padding: 15px 0;
+    }
+    
+    .menu li {
+        display: block;
+        float: none;
+        margin: 30px auto;
+        font-size: 150%;
+    }
+    
+    .menu a:link,
+    .menu a:visited {
+        color: #fff;
+        font-size: 75%;
+        text-decoration: none;
+        transition: color, 0.3s;
+    }
+    
+    .menu li:last-child a:link,
+    .menu li:last-child a:visited {
+        background-color: rgb(28, 134, 40);
+        padding: 10px;
+        border-radius: 3px;
+        transition: background-color, 0.3s;    
+    }
+    
+    .menu a::before {
+        content: "/";
+        color:rgb(28, 134, 40);
+        margin-right: 8px;
+        font-weight: 700;
+    }
+    
+    .menu li:last-child a::before { content: none;}
+    
+    .menu a:hover,
+    .menu a:active {  
+        color: rgb(28, 134, 40);
+        transition: color, 0.3s;
+    }
+    
+    .menu li:last-child a:hover,
+    .menu li:last-child a:active {  
+        color: #fff;
+        background-color: rgb(42, 168, 57);
+        transition: background-color, 0.3s;
+    }
+    
+
+    .headline {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 35%;
+    }
+    .titulo-principal {
+        line-height: 30px;
+        font-size: 180%;
+    }
+    
+    .box {width: 100%;}
+
+    #intro ul {padding: 0;}
+
+    .box-vantagens {
+        margin-top: 20px;
+        margin-left: 20%;
+        width: 60%;
+    }
+
+    #perfil .btn-cta {margin: auto 25%;}
+    #garantia h1,
+    #garantia .texto-longo {text-align: center;}
+    #depoimentos h1, 
+    #depoimentos .texto-curto {
+        text-align: center;
+        width: 100%;
+    }
+    footer h1 small {display: none;}
+    footer {padding: 30px;}
+}
+
+@media only screen and (max-height: 500px){
+    .headline {
+        width: 90%;
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+    header {
+        height: 100vh;
+        padding-bottom: 60px;
+    }
+}
+
+/*
+Min-width: 320px (smaller phone viewpoints)
+Min-width: 480px (small devices and most phones)
+Min-width: 768px (most tablets)
+Min-width: 992px (smaller desktop viewpoints)
+Min-width: 1200px (large devices and wide screens)
+*/ 
